@@ -1,0 +1,30 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test-lib": "jest test_lib",
+    "test1": "ts-node run.ts --part1 test_in.txt test_out1.txt",
+    "out1": "ts-node run.ts --part1 in.txt",
+    "run1": "ts-node run.ts --part1 test_in.txt test_out1.txt in.txt",
+    "test2": "ts-node run.ts --part2 test_in.txt test_out2.txt",
+    "out2": "ts-node run.ts --part2 in.txt",
+    "run2": "ts-node run.ts --part2 test_in.txt test_out2.txt in.txt"
+  },
+  "author": "",
+  "jest": {
+    "preset": "ts-jest",
+    "testMatch": [
+      "**/test*.ts"
+    ]
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.9",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
